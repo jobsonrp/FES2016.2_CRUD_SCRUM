@@ -63,7 +63,6 @@ if ($oper=="con"){
           substr($registro[4],5,2)."/" .
           substr($registro[4],0,4);
     echo "<p class='brco1'>Data de matrícula: $data</p>";
-    echo "<p class='brco1'>Curso: $registro[5]</p>";
 }
 elseif ($oper=="exc"){
     $res2=mysqli_query($conexao, "DELETE FROM alunos WHERE id_aluno=$cod_aluno");
