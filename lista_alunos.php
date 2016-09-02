@@ -39,8 +39,6 @@
                     <strong>E-mail</strong></a></td>
       <td><a href="lista_alunos.php?ordem=data_matr">
                     <strong>Matrícula</strong></a></td>
-      <td><a href="lista_alunos.php?ordem=curso">
-                    <strong>Curso</strong></a></td>
    </tr>
 <?php
 if(isset($_GET["ordem"]))
