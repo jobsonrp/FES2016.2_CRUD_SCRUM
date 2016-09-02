@@ -46,11 +46,6 @@ function validar(form1) {
         document.form1.alu_matr.focus()
         return false
     }
-    if (document.form1.alu_curso.value=='selecione'){ 
-        alert("Selecione o curso!") 
-        document.form1.alu_curso.focus() 
-        return false 
-    } 
 }
 function validarEmail(email) {
     var tstLogico=false
@@ -120,8 +115,6 @@ function validarData(data) {
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matrícula:
     <input name="dat_matr" type="text" id="alu_matr" size="15"
                                     maxlength="10" /> (dd/mm/aaaa)
-    <option selected>selecione</option>
-    </select><br />	
     </p>
     <p align="right">
     <input type="submit" name="envia" id="envia" value=" Enviar " />
