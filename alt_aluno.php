@@ -116,7 +116,7 @@ else{
     $data=substr($registro[4],8,2)."/".
           substr($registro[4],5,2)."/" .
           substr($registro[4],0,4);
-    $curso=$registro[5];
+    //$curso=$registro[5];
 }
 ?>
 <form name="form1" method="POST" action="alt_aluno2.php" 
@@ -143,20 +143,6 @@ else{
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matrícula: 
 <input name="dat_matr" type="text" id="alu_matr" 
           value="<?php echo $data ?>" /> dd/mm/aaaa
-</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Curso: 
-<select size="1" name="curso">
-    <option value="<?php echo $curso;?>" 
-     selected="selected"><?php echo $curso;?></option>
-<?php
-$res2=mysqli_query($conexao, "SELECT * FROM cursos");
-    while($registro2=mysqli_fetch_row($res2)) {
-        $codigo=$registro2[0];
-        $desc=$registro2[1];
-        echo "<option value=\"$codigo\">$codigo - $desc</option>";
-	}
-?>
-</select>
 </p>
 <p align="right">
 <input type="submit" name="envia" id="envia" value=" Enviar " /> &nbsp;
