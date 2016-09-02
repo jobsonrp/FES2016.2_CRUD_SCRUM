@@ -29,13 +29,13 @@ function validar(form1) {
     var tstEmail
     tstEmail=validarEmail(jsEmail)
     if (tstEmail==false) {
-        alert("E-mail inv·lido")
+        alert("E-mail inv√°lido")
         document.form1.alu_email.focus()
         return false
     }
     var jsNasc=document.form1.alu_matr.value
     if(!jsNasc) {
-        alert("Informe a data de matrÌcula")
+        alert("Informe a data de matr√≠cula")
         document.form1.alu_matr.focus()
         return false
     }
@@ -100,7 +100,7 @@ function validarData(data) {
                                cellspacing="0" cellpadding="3">
   <tr>
    <td>
-    <h3 align="center">Inclus„o de aluno</h3>
+    <h3 align="center">Inclus√£o de aluno</h3>
   <form id="form1" name="form1" method="POST" action="inc_aluno2.php" 
                                      onsubmit="return validar(this);">
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nome: 
@@ -117,21 +117,9 @@ function validarData(data) {
     <input name="email" type="text" id="alu_email" size="40"
                                               maxlength="30" />
     </p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matrÌcula:
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matr√≠cula:
     <input name="dat_matr" type="text" id="alu_matr" size="15"
-                                    maxlength="10" />dd/mm/aaaa
-    </p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Curso: 
-    <select size="1" id="alu_curso" name="curso">
-<?php
-    include("conecta.inc");
-    $res=mysqli_query($conexao, "SELECT * FROM cursos");
-    while($reg=mysqli_fetch_row($res)) {
-        $codigo=$reg[0];
-        $desc=$reg[1];
-        echo "<option value=\"$codigo\">$codigo - $desc</option>";
-    }
-?>
+                                    maxlength="10" /> (dd/mm/aaaa)
     <option selected>selecione</option>
     </select><br />	
     </p>
