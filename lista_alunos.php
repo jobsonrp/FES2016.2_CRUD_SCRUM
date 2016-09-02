@@ -58,7 +58,6 @@ while($reg=mysqli_fetch_row($res)) {
           substr($reg[4],5,2)."/" .
           substr($reg[4],0,4);
     echo "<td align='center'>$data</td>";
-    echo "<td align='right'>$reg[5]</td>";
     echo "</tr>";
 }
 mysqli_close($conexao);
