@@ -142,7 +142,7 @@ else{
 </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matrícula: 
 <input name="dat_matr" type="text" id="alu_matr" 
-          value="<?php echo $data ?>" /> dd/mm/aaaa
+          value="<?php echo $data ?>" /> (dd/mm/aaaa)
 </p>
 <p align="right">
 <input type="submit" name="envia" id="envia" value=" Enviar " /> &nbsp;

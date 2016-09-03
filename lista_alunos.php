@@ -13,7 +13,7 @@
   <tr><td>&nbsp;</td></tr>
   <tr>
    <td><font size="4" color="#FFFFFF"><strong>&nbsp;&nbsp;
-                  CRUD - ALunos</strong></font></td>
+                  CRUD - Alunos</strong></font></td>
   </tr>
   <tr><td>&nbsp;</td></tr>
 </table>
@@ -25,7 +25,7 @@
     <table width="650" border="0" bgcolor="#DADDFE" align="center"
                      cellspacing="0" cellpadding="3" rules="cols">
    <tr>
-		<td colspan="6" align="center" class="f1">Listagem de alunos</td>
+		<td colspan="6" align="center" class="f1">Lista de Alunos</td>
    </tr>
      <tr><td colspan="6">&nbsp;</td></tr>
      <tr align="center">

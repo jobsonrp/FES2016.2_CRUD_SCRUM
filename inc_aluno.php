@@ -81,7 +81,7 @@ function validarData(data) {
   <tr><td>&nbsp;</td></tr>
   <tr>
    <td><font size="4" color="#FFFFFF"><strong>&nbsp;&nbsp;
-                     CRUD - ALunos</strong></font></td>
+                     CRUD - Alunos</strong></font></td>
   </tr>
   <tr><td>&nbsp;</td>
   </tr>
