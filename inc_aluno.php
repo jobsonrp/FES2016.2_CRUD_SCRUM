@@ -86,7 +86,7 @@ function validarData(data) {
   <tr><td>&nbsp;</td>
   </tr>
 </table>
-<table width="750" border="0" bgcolor="#6699FF">
+<table width="750" border="0" bgcolor="#99aaff">
   <tr><td><input type="button" value=" &nbsp;Voltar&nbsp; " 
           onclick="window.location='index.html'"></td></tr>
   <tr>
