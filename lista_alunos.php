@@ -13,7 +13,7 @@
   <tr><td>&nbsp;</td></tr>
   <tr>
    <td><font size="4" color="#FFFFFF"><strong>&nbsp;&nbsp;
-                  Controle de Alunos </strong></font></td>
+                  CRUD - ALunos</strong></font></td>
   </tr>
   <tr><td>&nbsp;</td></tr>
 </table>
@@ -30,7 +30,7 @@
      <tr><td colspan="6">&nbsp;</td></tr>
      <tr align="center">
       <td><a href="lista_alunos.php?ordem=id_aluno">
-                    <strong>Código</strong></a></td>
+                    <strong>CÃ³digo</strong></a></td>
       <td><a href="lista_alunos.php?ordem=nome">
                     <strong>Nome</strong></a></td>
       <td><a href="lista_alunos.php?ordem=sexo">
@@ -38,7 +38,7 @@
       <td><a href="lista_alunos.php?ordem=email">
                     <strong>E-mail</strong></a></td>
       <td><a href="lista_alunos.php?ordem=data_matr">
-                    <strong>Matrícula</strong></a></td>
+                    <strong>MatrÃ­cula</strong></a></td>
    </tr>
 <?php
 if(isset($_GET["ordem"]))
