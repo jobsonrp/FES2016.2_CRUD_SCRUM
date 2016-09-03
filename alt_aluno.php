@@ -75,7 +75,7 @@ function validarData(data) {
  <tr><td>&nbsp;</td></tr>
  <tr>
   <td><font size="4" color="#FFFFFF"><strong>&nbsp;&nbsp; 
-                     Controle de Alunos </strong></font></td>
+                     CRUD - Alunos</strong></font></td>
  </tr>
  <tr><td>&nbsp;</td></tr>
 
