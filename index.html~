@@ -9,7 +9,7 @@
 <script language="JavaScript">
 function validar(form1) {
     if(!document.form1.aluno.value){
-        alert("Informe o código do aluno!")
+        alert("Informe o id do aluno")
         document.form1.aluno.focus()
         return false
     }
@@ -23,19 +23,64 @@ function validar(form1) {
     if (achou)
         return true
     else{
-        alert("Informe a operação: Consultar, Excluir ou Alterar!")
+        alert("Informe a operação: Cons., Exc. ou Alt.!" +
+              "\n(Consulta, Exclusão ou Alteração)")
+        return false 
+    }
+}
+function validar2(form2) {
+    if(!document.form2.aluno2.value){
+        alert("Informe o id do aluno")
+        document.form2.aluno2.focus()
         return false
+    }
+    achou=false
+    for(i=0;i<=1;i++){ 
+        if(document.form2.oper2[i].checked){ 
+            achou=true
+            break
+        }
+    }
+    if(!achou){
+        alert("Informe a operação: Alteração e inclusão\nou Exclusão!")
+        return false 
+    }
+}
+function validar3(form3) {
+    achou=false
+    for(i=0;i<=1;i++){ 
+        if(document.form3.oper3[i].checked){ 
+            achou=true
+            break
+        }
+    }
+    if(!achou){
+        alert("Informe a operação: Inclusão ou Exclusão!")
+        return false 
+    }
+}
+function validar4(form4) {
+    achou=false
+    for(i=0;i<=1;i++){ 
+        if(document.form4.oper4[i].checked){ 
+            achou=true
+            break
+        }
+    }
+    if(!achou){
+        alert("Informe a operação: Inclusão ou Exclusão!")
+        return false 
     }
 }
 </script>
-<body bgcolor="#eeeeeff">
+<body bgcolor="#eeeeff">
 <div id=area_geral>
 <table width="750" border="0" bgcolor="#000033"
                 cellspacing="0" cellpadding="0">
  <tr><td>&nbsp;</td></tr>
  <tr>
   <td><font size="4" color="#FFFFFF"><strong>&nbsp;&nbsp; 
-                     CRUD - ALunos</strong></font></td>
+                     Banco de Dados </strong></font></td>
  </tr>
  <tr><td>&nbsp;</td></tr>
 </table>
@@ -48,40 +93,37 @@ function validar(form1) {
  <table width="90%" border="0" bgcolor="#DADDFE" 
      cellpadding="0" cellspacing="0" rules="cols">
  <tr><td colspan="4" align="center">
-         <h3><u>Administração dos Alunos</u></h3></td></tr>
+         <h3><u>MENU</u></h3></td></tr>
 <!-- --------------------- Submenu alunos ----------------------------- -->	
   <td width="22%" height="253" valign="top">
  <table width="100%" border="0" bgcolor="#DADDFE"
                   cellpadding="0" cellspacing="0">
+  <tr><td align="center"><h3>Usu&aacute;rios</h3></td></tr>
  <form name="form1" method="post" action="admin_aluno.php"
         onsubmit="return validar(this);">	   
-  <tr><td>&nbsp;&nbsp;&nbsp;Código do Aluno:
-      <input type="text" size=10 name="aluno" value=""> </td></tr>
-  <tr><td>&nbsp;</td></tr>	
+  <tr><td>&nbsp;&nbsp;&nbsp;Aluno:
+      <input type="text" size=10 name="aluno" value=""> </td></tr>	
   <tr><td align="center">
       <input name="oper" type="radio" id="oper1a" value="con" />
-   <label for="oper1a">Consultar</label>
+   <label for="oper1a">Cons</label>
       <input name="oper" type="radio" id="oper1b" value="exc" />
-   <label for="oper1b">Excluir</label>
+   <label for="oper1b">Exc</label>
       <input name="oper" type="radio" id="oper1c" value="alt" />
-   <label for="oper1c">Alterar</label> </td></tr>
+   <label for="oper1c">Alt</label> </td></tr>
   <tr><td align="center">
       <input type="submit" name="enter" value=" Enter "> </td></tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr><td><hr /></td></tr>
+  <tr><td>&nbsp;</td></tr>
+ </form>	
+  <tr><td align="center">
+      <input type="button" value=" &nbsp;Incluir&nbsp;&nbsp; " 
+             onclick="window.location='inc_aluno.php'"></td></tr>
   <tr><td>&nbsp;</td></tr>
   <tr><td align="center">
       <input type="button" value=" &nbsp;Listar&nbsp;&nbsp; " 
              onclick="window.location='lista_alunos.php'"></td></tr>
   <tr><td>&nbsp;</td></tr>
-  <tr><td><hr /></td></tr>
- </form>
-  <tr><td align="center">	
-      <h3><u>Cadastro dos Alunos</u></h3></td></tr>
-
-  <tr><td align="center">	
-      <input type="button" value=" &nbsp;Incluir&nbsp;&nbsp; " 
-             onclick="window.location='inc_aluno.php'"></td></tr>
-  <tr><td>&nbsp;</td></tr>
-
  </table> </td>
  
 </table></td>
@@ -90,5 +132,4 @@ function validar(form1) {
 </table>
 </div>
 </body>
-</html>		
-
+</html>
