@@ -80,7 +80,7 @@ function validarData(data) {
  <tr><td>&nbsp;</td></tr>
 
 </table>
-<table width="750" border="0" bgcolor="#99aaff">
+<table width="750" border="0" bgcolor="#4499FF">
  <tr><td><input type="button" value=" &nbsp;Voltar&nbsp; " 
           onclick="window.location='index.html'"></td></tr>
  <tr>
@@ -90,7 +90,7 @@ function validarData(data) {
  <tr>
 
 </table>
-<table width="720" border="0" bgcolor="#99aaff">
+<table width="720" border="0" bgcolor="#4499FF">
  <tr><td>&nbsp;</td></tr>
  <tr>
   <td>
@@ -142,7 +142,7 @@ else{
 </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data de matrícula: 
 <input name="dat_matr" type="text" id="alu_matr" 
-          value="<?php echo $data ?>" /> (dd/mm/aaaa)
+          value="<?php echo $data ?>" />(dd/mm/aaaa)
 </p>
 <p align="right">
 <input type="submit" name="envia" id="envia" value=" Enviar " /> &nbsp;
