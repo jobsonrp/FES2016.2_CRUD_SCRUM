@@ -8,8 +8,10 @@
 </head>
 <script language="JavaScript">
 function validar(form1) {
-    if(!document.form1.aluno.value){
-        alert("Informe o código do aluno!")
+    if (parseInt(document.form1.aluno.value) % 1 === 0)
+	return true
+    else{	
+        alert("Digite um número para o código do aluno!")
         document.form1.aluno.focus()
         return false
     }
