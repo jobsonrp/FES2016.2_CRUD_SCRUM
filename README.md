@@ -8,7 +8,12 @@ Quadro com os artefatos SCRUM no Trello: https://trello.com/b/w1V0Rcbc/crud-scru
 Interface de Usuário do IoEnergyWater
 Link: http://ninjamock.com/s/C6QJF
 
-
-
-
+Cronograma:
+* Adicionar as telas e navegação
+* Adicionar menu navigation
+* Realizar os testes
+* Conexão com BD
+* Implementar os gráficos
+* Definir como os sensores serão simulados
+* Revisar o cronograma
 
