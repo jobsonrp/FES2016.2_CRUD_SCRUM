@@ -1,3 +1,4 @@
+
 Status Report - Sprint 0 e 1
 
 Na Sprint 0 - as tabelas foram criadas no banco de dados do site de hospedagem Hostinger, o template foi definido mas seu uso limitou na implementação dos códigos necessários para realizar a Sprint 1 (Logar no Sistema). Então foi decidido criar o site do sistema sem template mesmo. O template teria a vantagem da opção de auto redimensionamento de visualização nos dispositivos desejáveis, mas limitava na implementação. Nas próximas Sprints poderei tentar novamente o seu uso.
