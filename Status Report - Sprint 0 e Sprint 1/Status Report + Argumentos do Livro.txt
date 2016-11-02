@@ -1,0 +1,12 @@
+Status Report - Sprint 0 e 1
+
+Na Sprint 0 - as tabelas foram criadas no banco de dados do site de hospedagem Hostinger, o template foi definido mas seu uso limitou na implementação dos códigos necessários para realizar a Sprint 1 (Logar no Sistema). Então foi decidido criar o site do sistema sem template mesmo. O template teria a vantagem da opção de auto redimensionamento de visualização nos dispositivos desejáveis, mas limitava na implementação. Nas próximas Sprints poderei tentar novamente o seu uso.
+
+Na Sprint 1 foi implementado o Logar no Sistema, adicionando a validação do campo do login que no caso é o e-mail do usuário. No projeto não haverá tela de cadastro pois para utilizar o sistema é necessário toda a infraestrutura descrita na arquitetura SOA do projeto.
+
+Para realização dos testes do Logar no Sistema, utilizei a estratégia de Teste de Unidade onde os testes são feitos apenas neste módulo explorando todas as possibilidades de encontrar erros.
+
+Depois do Login Funcionando com a validação, utilizei a estratégia de Teste de Integração para a Tela inicial do Sistema e também com o comando de Logout.
+
+Nas próximas Sprints farei a correção do método Session que tentei implementar mas não ficou correto. O usuário Loga no Sistema e ao abrir a tela inicial irá aparecer o nome de usuário e o status de Logado.
+
